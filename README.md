@@ -11,19 +11,19 @@
 - `git checkout branchname`
 
 ## Commit list
-- `git cherry -v master` (lists all commits cf master)
+- `git cherry -v master` # lists all commits cf master
 
 ## Stashing (keep edits without committing)
 - `git stash list`
-- `git stash` (works for current branch)
-- `git stash pop` (applies stash@{0} and removes from stash list)
+- `git stash` # works for current branch
+- `git stash pop` # applies stash@{0} and removes from stash list
 - `git stash drop stash@{1}`
 
 ## Rebasing ...
 ### To squash commits only
 - `git checkout branchname`
-- `git rebase -i HEAD~n` (n is the number of commits to squash)
-- `git push -f` (if there's nothing else to do)
+- `git rebase -i HEAD~n` # n is the number of commits to squash
+- `git push -f` # if there's nothing else to do
 
 ### Rebase a branch (with upstream/master, also works for branch master of a forked repo)
 
@@ -49,10 +49,10 @@ Go to your forked repo (in GitHub) and "Create pull request"
 - `git reset --hard branch_bk`
 
 ## Miscellaneous:
-- `git branch` (branch list)
-- `git branch -D branch_bk` (delete branch)
-- `git clone https://github.com/upstreamdir/upstreamreponame -b PRbranchname` (clone a PR branch)
-- `git status`, `git pull` (e.g. update a cloned PR branch)
+- `git branch` # branch list
+- `git branch -D branch_bk` # delete branch
+- `git clone https://github.com/upstreamdir/upstreamreponame -b PRbranchname` # clone a PR branch
+- `git status`, `git pull` # e.g. update a cloned PR branch
 
 ### Rebase a stash (not convinced this is useful):
 - `git stash pop stash@{#}`
